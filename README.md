@@ -20,3 +20,12 @@ git add . и git status
 
 Выполняем команду git diff --staged
 <img src = "img/07.png" width = 100%>
+
+Выполняем коммит
+<img src = "img/08.png" width = 100%>
+
+И снова git status
+<img src = "img/09.png" width = 100%>
+
+Выполняем команду git push, чтобы опубликовать все изменения.
+<img src = "img/10.png" width = 100%>
