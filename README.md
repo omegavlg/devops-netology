@@ -84,3 +84,6 @@ terraform.rc
 - Файлы переопределений (`override.tf`, `override.tf.json` и их шаблоны).
 - Временные файлы блокировки состояния Terraform (`.terraform.tfstate.lock.info`).
 - Конфигурационные файлы CLI (`.terraformrc` и `terraform.rc`).
+
+Создаем файлы will_be_deleted.txt (с текстом will_be_deleted) и will_be_moved.txt (с текстом will_be_moved) и коммитим их с комментарием Prepare to delete and move.
+<img src = "img/13.png" width = 100%>
