@@ -90,3 +90,6 @@ terraform.rc
 
 Удаляем файл will_be_deleted.txt из репозитория и переименовываем файл will_be_moved.txt в has_been_moved.txt. Коммитим полученные изменения.
 <img src = "img/14.png" width = 100%>
+
+Выведем git log
+<img src = "img/15.png" width = 100%>
