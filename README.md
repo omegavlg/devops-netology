@@ -87,3 +87,6 @@ terraform.rc
 
 Создаем файлы will_be_deleted.txt (с текстом will_be_deleted) и will_be_moved.txt (с текстом will_be_moved) и коммитим их с комментарием Prepare to delete and move.
 <img src = "img/13.png" width = 100%>
+
+Удаляем файл will_be_deleted.txt из репозитория и переименовываем файл will_be_moved.txt в has_been_moved.txt. Коммитим полученные изменения.
+<img src = "img/14.png" width = 100%>
