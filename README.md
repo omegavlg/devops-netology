@@ -77,13 +77,15 @@ terraform.rc
 
 В нем игнорируются следующие файлы и каталоги:
 
-- Каталог `.terraform` и все его содержимое.
-- Файлы с расширением `.tfstate` и их версии.
-- Логи крашей (`crash.log` и `crash.*.log`).
-- Файлы с расширением `.tfvars` и `.tfvars.json`, которые могут содержать чувствительные данные.
-- Файлы переопределений (`override.tf`, `override.tf.json` и их шаблоны).
-- Временные файлы блокировки состояния Terraform (`.terraform.tfstate.lock.info`).
-- Конфигурационные файлы CLI (`.terraformrc` и `terraform.rc`).
+- Все файлы и папки внутри директорий .terraform (например, **/.terraform/*).
+- Все файлы с расширением .tfstate и .tfstate.* (например, *.tfstate и *.tfstate.*).
+- Все файлы с именем crash.log и все файлы с именем, начинающимся на crash. и заканчивающимся на .log (например, crash.log, crash.*.log).
+- Все файлы с расширением .tfvars и .tfvars.json (например, *.tfvars, *.tfvars.json).
+- Файлы с именем override.tf, override.tf.json, а также файлы, заканчивающиеся на _override.tf и _override.tf.json (например, override.tf, *_override.tf).
+- Файл .terraform.tfstate.lock.info.
+- Все файлы, начинающиеся с terraform.rc (например, .terraformrc, terraform.rc).
+
+Эти файлы и каталоги обычно содержат конфиденциальную информацию, временные или специфичные для локальной среды данные, которые не следует отслеживать в системе контроля версий.
 
 Создаем файлы will_be_deleted.txt (с текстом will_be_deleted) и will_be_moved.txt (с текстом will_be_moved) и коммитим их с комментарием Prepare to delete and move.
 <img src = "img/13.png" width = 100%>
