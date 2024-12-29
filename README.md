@@ -74,3 +74,13 @@ override.tf.json
 .terraformrc
 terraform.rc
 ```
+
+В нем игнорируются следующие файлы и каталоги:
+
+- Каталог `.terraform` и все его содержимое.
+- Файлы с расширением `.tfstate` и их версии.
+- Логи крашей (`crash.log` и `crash.*.log`).
+- Файлы с расширением `.tfvars` и `.tfvars.json`, которые могут содержать чувствительные данные.
+- Файлы переопределений (`override.tf`, `override.tf.json` и их шаблоны).
+- Временные файлы блокировки состояния Terraform (`.terraform.tfstate.lock.info`).
+- Конфигурационные файлы CLI (`.terraformrc` и `terraform.rc`).
