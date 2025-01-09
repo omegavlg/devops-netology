@@ -87,3 +87,5 @@ terraform.rc
 
 Создаем файлы will_be_deleted.txt (с текстом will_be_deleted) и will_be_moved.txt (с текстом will_be_moved) и коммитим их с комментарием Prepare to delete and move.
 <img src = "img/13.png" width = 100%>
+
+Добавляем новую строку для задания "Ветки".
